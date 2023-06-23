@@ -50,7 +50,7 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
             </div>
             <hr/>
             <footer>
-                <p>Mail:moo.nothingness@gmail.com | <a href="https://github.com/TuanManhCao/digital-garden">Mind Stone</a></p>
+                <p>Mail:moo.nothingness@gmail.com <a href="https://github.com/TuanManhCao/digital-garden">Mind Stone</a></p>
             </footer>
         </div>
     );
