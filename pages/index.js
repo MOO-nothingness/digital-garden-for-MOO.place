@@ -36,13 +36,13 @@ const {nodes, edges} = constructGraphData()
 
 export function getStaticProps() {
     const tree = convertObject(getDirectoryData());
-    const contentData = getSinglePost("HOME");
+    const contentData = getSinglePost("index");
     const flattenNodes = getFlattenArray(tree)
-    const listOfEdges =   edges.filter(anEdge => anEdge.target === "HOME")
+    const listOfEdges =   edges.filter(anEdge => anEdge.target === "index")
     const internalLinks = listOfEdges.map(anEdge => nodes.find(aNode => aNode.slug === anEdge.source)).filter(element => element !== undefined)
     const backLinks = [...new Set(internalLinks)]
 
-    const graphData = getLocalGraphData("HOME");
+    const graphData = getLocalGraphData("index");
     return {
         props: {
             content: contentData.data,
