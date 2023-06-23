@@ -41,6 +41,7 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
     return (
 
         <div className="markdown-rendered">
+            </Alert>
             <div dangerouslySetInnerHTML={{__html: content}}/>
             {/*<button onClick={handleInternalLinkClick}>Click me</button>*/}
             {/*<hr/>*/}
@@ -48,6 +49,9 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
                 <BackLinks linkList={backLinks}/>
             </div>
             <hr/>
+            <footer>
+                <p>Mail:moo.nothingness@gmail.com | <a href="https://github.com/TuanManhCao/digital-garden">Mind Stone</a></p>
+            </footer>
         </div>
     );
 }
