@@ -1,6 +1,6 @@
 # 무의공간
 
-![[moo-logo-galo.png]]
+![](/images/moo-logo-galo.png)
 
 ___
 
