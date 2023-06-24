@@ -42,7 +42,6 @@ function MDContent({content, backLinks, handleOpenNewContent}) {
 
         <div className="markdown-rendered">
             <Alert severity="info">
-                <AlertTitle>Want to know more?</AlertTitle>
                 
             </Alert>
             <div dangerouslySetInnerHTML={{__html: content}}/>
